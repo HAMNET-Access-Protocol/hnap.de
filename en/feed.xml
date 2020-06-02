@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+    <channel>
+        <title>HAMNET Access Protocol</title>
+        <atom:link href="https://hnap.de//en/feed.xml" rel="self" type="application/rss+xml"/>
+        <link>https://hnap.de//en/</link>
+        <description>HAMNET Access Protocol</description>
+        <pubDate>Wed, 03 Jun 2020 00:19:26 +0200</pubDate>
+        <webfeeds:icon>https://hnap.de//en/assets/img/hnap_logo_quadrat.png</webfeeds:icon>
+        
+    </channel>
+</rss>
