@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+  {% if site.theme_settings.header_text %}
+  <div id="main" class="call-out"
+  style="background-image: url('{{ site.baseurl_root}}{{ site.theme_settings.header_feature_image }}')">
+    <h1>    
+    {% if site.lang == "de" %}        
+    {{ site.theme_settings.header_text }}
+    {% elsif site.lang == "en" %}        
+    {{ site.theme_settings.header_text_en }}
+    {% endif %}
+    </h1>
+  </div>
+  {% endif %}
+
+  {% include blog.html %}
+    
+</div>
