@@ -6,19 +6,11 @@
         {% include icons.html %}
         </ul>
     </div>
-    <p class="text">
-        {% if site.lang == "de" %}        
+    <p class="text">       
         <a href="{{ '/legal.html' | relative_url }}">{% t links.imprint %}</a>
-        {% elsif site.lang == "en" %}        
-        <a href="{{ site.baseurl_root}}en/legal.html">{% t links.imprint %}</a>
-        {% endif %}
     </p>
-    <p class="text">
-        {% if site.lang == "de" %}        
+    <p class="text">      
         {{ site.theme_settings.footer_text }}
-        {% elsif site.lang == "en" %}        
-        {{ site.theme_settings.footer_text_en }}
-        {% endif %}
     </p>
 </footer>
 {% endif %}

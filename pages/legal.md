@@ -1,7 +1,6 @@
 ---
 layout: page
-title: ""
-title_en: ""
+title: "Legal Imprint"
 permalink: /legal.html
 hide: true
 ---

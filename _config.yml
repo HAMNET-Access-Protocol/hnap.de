@@ -22,9 +22,7 @@ theme_settings:
   header_text: "HAMNET Access Protocol"
   header_text_en: "HAMNET Access Protocol"
   header_feature_image: assets/img/main.png
-  footer_text: 
-    Erstellt mit <a href="https://jekyllrb.com/">Jekyll</a> und <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
-  footer_text_en:
+  footer_text:
     Made with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
   
   # Icons
@@ -123,6 +121,6 @@ exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "
 # theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap # If using as a remote_theme in github
 
-languages: ["de", "en"]
+languages: ["en"]
 exclude_from_localizations: ["assets", "CNAME", "gh-pages-deploy.sh"]
 

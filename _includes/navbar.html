@@ -2,20 +2,12 @@
     
     <!-- Logo and title -->
 	<div class="branding">
-    {% if site.lang == "de" %}
     <a href="{{ '/' | relative_url }}">
-    {% elsif site.lang == "en" %}
-    <a href="{{ '/en' }}">
-    {% endif %}
 			<img alt="logo img" class="avatar" src="{{ site.baseurl_root}}{{ site.theme_settings.avatar }}" />
 		</a>
 
-		<h1 class="site-title">      
-      {% if site.lang == "de" %}
+		<h1 class="site-title">
       <a aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
-      {% elsif site.lang == "en" %}
-      <a aria-label="{{ site.title }}" href="{{ '/en' }}">
-      {% endif %}
         {{ site.title }}
       </a>
 		</h1>
@@ -35,17 +27,10 @@
             {% unless page.title == null or page.hide or name_page contains page.title %}
             <li class="separator"> | </li>
             <li>
-                {% if site.lang == "de" %}
                 <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
                     {% if page.icon %} <i class="fa {{ page.icon }}" aria-hidden="true"></i>
                     {% else %} {{ page.title }} {% endif%}
                 </a>
-                {% elsif site.lang == "en" %}
-                <a class="clear" aria-label="{{ page.title_en }}" title="{{ page.title_en }}" href="{{ site.baseurl_root}}en{{ page.url }}">
-                    {% if page.icon %} <i class="fa {{ page.icon }}" aria-hidden="true"></i>
-                    {% else %} {{ page.title_en }} {% endif%}
-                </a>
-                {% endif %}
             </li>
             {% endunless %}
             {% assign name_page = page.title | append: name_page %}
@@ -60,21 +45,18 @@
         </li>
         <li class="separator"> | </li>
         <li>
-          <a class="clear" href="https://t.me/hnap"
+          <a class="clear" href="https://t.me/hamnet_access_protocol"
             name="{% t links.telegram %}" target="blank">
             {% t links.telegram %}
           </a>
         </li>
-
         <li class="separator"> | </li>
         <li>
-        {% if site.lang == "de" %}
-        <a href="{{ site.baseurl_root }}en{{ page.url }}" >{% t global.english %}</a>
-        {% elsif site.lang == "en" %}
-        <a href="{{ page.url }}" >{% t global.german %}</a>
-        {% endif %}
+          <a class="clear" href="https://github.com/hamnet-access-protocol"
+            name="{% t links.sourcecode %}" target="blank">
+            {% t links.sourcecode %}
+          </a>
         </li>
-
     </ul>
         
 	</nav>
