@@ -1,3 +1,22 @@
+# Installation of the toolchain
+
+```bash
+gem install bundler
+bundle install
+```
+
+# Run website locally
+
+```bash
+jekyll serve
+```
+
+or
+
+```bash
+bundle exec jekyll serve
+```
+
 # Publishing the website
 
 ``` bash
