@@ -1,11 +1,10 @@
 
 ## 23. April 2019: HAMNET auf 70-cm und andere Baender - Sachstand
 
-```
-Subject: HAMNET auf 70-cm und andere Baender - Sachstand
-Date: Tue, 23 Apr 2019 07:21:11 +0200
-From: Jann Traschewski <jann@gmx.de>
-To: as-koordination@de.ampr.org
+Subject: HAMNET auf 70-cm und andere Baender - Sachstand  
+Date: Tue, 23 Apr 2019 07:21:11 +0200  
+From: Jann Traschewski <jann@gmx.de>  
+To: as-koordination@de.ampr.org  
 
 Liebe Freunde,
 
@@ -23,136 +22,128 @@ Bandbreiten bis zu 1,6 MHz betrachten.
 
 
 1. SDR-basierte Eigenentwicklung (439,700 MHz Basisstation - 434,900 MHz
-Teilnehmer)
+Teilnehmer)  
+    Grundlegende Gedanken zur Aktivierung der beiden Frequenzen wurden in
+    einer kleinen Gruppe bereits beleuchtet. Sehr schnell wurde allerdings
+    klar, dass die zeitlichen Ressourcen der Teilnehmer zur Umsetzung der
+    Ideen nicht ausreichen wuerden. Chris, DL1COM, und Jann, DG8NGN, haben
+    sich daher in ihrem QRL erfolgreich nach Moeglichkeiten der
+    Ausschreibung einer Abschlussarbeit zu dem Thema umgeschaut. Details
+    dazu werde ich in einer separaten Nachricht zur Suche eines geeigneten
+    Kandidaten bekanntgeben.
+<br/><br/>
 
-Grundlegende Gedanken zur Aktivierung der beiden Frequenzen wurden in
-einer kleinen Gruppe bereits beleuchtet. Sehr schnell wurde allerdings
-klar, dass die zeitlichen Ressourcen der Teilnehmer zur Umsetzung der
-Ideen nicht ausreichen wuerden. Chris, DL1COM, und Jann, DG8NGN, haben
-sich daher in ihrem QRL erfolgreich nach Moeglichkeiten der
-Ausschreibung einer Abschlussarbeit zu dem Thema umgeschaut. Details
-dazu werde ich in einer separaten Nachricht zur Suche eines geeigneten
-Kandidaten bekanntgeben.
-
-
-2. LTE mit 1,4 MHz Bandbreite (23-cm Basisstation - 433,920 MHz Teilnehmer)
-
-Von SRS (Software Radio Systems) gibt es auf Github
-(http://github.com/srsLTE/srsLTE) den Code fuer eine Basisstation
-(eNodeB) mit Unterstuetzung von 1,4 MHz und FDD (Frequency Division
-Duplex). Passend dazu auch den Code fuer einen Teilnehmer (UE). Eine
-Idee waere es den Downlink der Basisstation zum Teilnehmer auf 23-cm
-(~1243 MHz) laufen zu lassen, waehrend der Uplink des Teilnehmers auf
-der 70-cm ISM-Mittenfrequenz (433,920 MHz) zur Basisstation sendet.
-
-Mit der Annahme, dass fehlende Signalanteile (ISM-Stoerungen!) des
-Teilnehmers sich nur auf die erreichbare Datenrate auswirkt
-(OFDM-Modulation), koennte man das beste aus dem ISM-Band herausholen!
-Der groesste Aufwand ist an der Basisstation zu erwarten, die eine hohe
-Ausgangsleistung benoetigt, um im 23-cm-Band den Teilnehmer auch bei
-"non-line-of-sight"-Bedingungen noch zu erreichen. Jeder ist aufgerufen
-diese Idee zu evaluieren.
-
+2. LTE mit 1,4 MHz Bandbreite (23-cm Basisstation - 433,920 MHz Teilnehmer)  
+    Von SRS (Software Radio Systems) gibt es auf Github
+    (http://github.com/srsLTE/srsLTE) den Code fuer eine Basisstation
+    (eNodeB) mit Unterstuetzung von 1,4 MHz und FDD (Frequency Division
+    Duplex). Passend dazu auch den Code fuer einen Teilnehmer (UE). Eine
+    Idee waere es den Downlink der Basisstation zum Teilnehmer auf 23-cm
+    (~1243 MHz) laufen zu lassen, waehrend der Uplink des Teilnehmers auf
+    der 70-cm ISM-Mittenfrequenz (433,920 MHz) zur Basisstation sendet.
+    <br/><br/>
+    Mit der Annahme, dass fehlende Signalanteile (ISM-Stoerungen!) des
+    Teilnehmers sich nur auf die erreichbare Datenrate auswirkt
+    (OFDM-Modulation), koennte man das beste aus dem ISM-Band herausholen!
+    Der groesste Aufwand ist an der Basisstation zu erwarten, die eine hohe
+    Ausgangsleistung benoetigt, um im 23-cm-Band den Teilnehmer auch bei
+    "non-line-of-sight"-Bedingungen noch zu erreichen. Jeder ist aufgerufen
+    diese Idee zu evaluieren.
+<br/><br/>
 
 3. Narrowband IoT (Internet-of-Things) LTE (439,700 MHz Basisstation -
-434,900 MHz Teilnehmer)
+434,900 MHz Teilnehmer)  
+    Der "physical layer" von NB-IoT (3GPP Cat. NB1 / NB2) koennte >200
+    kBit/s transportieren, was zwar unter der angepeilten
+    Datenuebertragungsrate liegt, aber vielleicht doch einen Blick wert ist.
+    Im Downlink kommt OFDMA mit 12x 15kHz Traegern zum Einsatz (180 kHz
+    Bandbreite) und im Uplink SC-FDMA. Die tatsaechliche Nutzdatenrate pro
+    Teilnehmer liegt aber nochmal deutlich unter dem des "physical layers"
+    (~25 kbps / DL und ~64 kbps / UL). Das Dokument
+    https://www.keysight.com/upload/cmc_upload/All/20170612-A4-JianHuaWu-updated.pdf
+    gibt einen recht guten Einblick.
+    <br/><br/>
+    Von SRS (Software Radio Systems) ist uns eine kommerzielle
+    Implementierung bekannt, die aber auf Nachfrage von Ralph, DK5RAS, bald
+    oeffentlich gemacht werden soll. Zitat: "We plan to release our NB-IoT
+    features within the open-source srsLTE suite this year and it would be
+    great to see them used by the ham radio community. We don't have a firm
+    release date set just yet but we'll post all notices to the srslte-users
+    mailing list as they become available."
+<br/><br/>
 
-Der "physical layer" von NB-IoT (3GPP Cat. NB1 / NB2) koennte >200
-kBit/s transportieren, was zwar unter der angepeilten
-Datenuebertragungsrate liegt, aber vielleicht doch einen Blick wert ist.
-Im Downlink kommt OFDMA mit 12x 15kHz Traegern zum Einsatz (180 kHz
-Bandbreite) und im Uplink SC-FDMA. Die tatsaechliche Nutzdatenrate pro
-Teilnehmer liegt aber nochmal deutlich unter dem des "physical layers"
-(~25 kbps / DL und ~64 kbps / UL). Das Dokument
-https://www.keysight.com/upload/cmc_upload/All/20170612-A4-JianHuaWu-updated.pdf
-gibt einen recht guten Einblick.
+4. New Packet Radio by Guillaume, F4HDK  
+    Guillaume, F4HDK, hat mit dem "NPR - New Packet Radio"-Projekt
+    (https://hackaday.io/project/164092-npr-new-packet-radio) eine sehr gute
+    Grundlage zur Aktivierung des 70-cm-Bandes geschaffen. Fertig, guenstig
+    und beschaffbar. Das DARC VHF/UHF/SHF-Referat hat sich 10 Bausaetze
+    (bereits eingetroffen) und 2 Endstufen (im Zulauf) besorgt und wird
+    damit erste Erfahrungen sammeln (Danke an Hans, DL8MCG). Zum Einsatz
+    kommt 2- oder 4-GFSK im Simplex-Betrieb mit Hilfe des RF-Moduls "RF4463
+    F30" (500mW).
+    <br/><br/>
+    Mit 4GFSK kommt man bei der Uebertragungsrate schnell an seine Grenzen.
+    Guillaume gibt 360kbps (Raw datarate) und 220kbps (Useful datarate) bei
+    einer Bandbreite von 270 kHz an. Weitere Bandbreiten bei hoeherer
+    Datenrate sind 450 kHz und 750 kHz. Auf unsere Rueckfrage hat er
+    signalisiert, dass bei entsprechenden Bedarf auch eine 200 kHz Variante
+    laengerfristig entstehen kann.
+<br/><br/>
 
-Von SRS (Software Radio Systems) ist uns eine kommerzielle
-Implementierung bekannt, die aber auf Nachfrage von Ralph, DK5RAS, bald
-oeffentlich gemacht werden soll. Zitat: "We plan to release our NB-IoT
-features within the open-source srsLTE suite this year and it would be
-great to see them used by the ham radio community. We don't have a firm
-release date set just yet but we'll post all notices to the srslte-users
-mailing list as they become available."
+5. Klassisches IP-over-AX.25  
+    Weiter ist es moeglich ueber das altbekannte Packet Radio Netz mit
+    IP-over-AX.25 in das HAMNET einzusteigen. Als Bindeglied dient der
+    IGATE-Knoten (AX.25-Call = IGATE SSID = 0). Verbindet man sich mit dem
+    Knoten per AX.25 und gibt "getip" ein, so wird fuer das Rufzeichen eine
+    IP-Adresse aus dem IP-Pool 44.130.254.128/25 fuer 40 Tage (57600
+    Minuten) reserviert und ausgegeben. Traegt man diese IP-Adresse in
+    seinen TCP/IP-Stack ein und benutzt IGATE als ARP, so kann eine
+    (langsame) Verbindung mit dem HAMNET aufnehmen.
+<br/><br/>
 
+6. D-Star DD (Digital Data)  
+    ICOM hat neben dem D-Star Digital Voice System auch eine Implementierung
+    fuer digitale Daten (D-Star DD) in Kooperation mit der JARL entwickelt.
+    Fuer D-Star DD gibt es von ICOM einen Einschub fuer ein ICOM-Relais und
+    auf Nutzerseite (es funktioniert auch Peer-to-Peer) den ICOM ID-1. Beide
+    Geraete arbeiten im 23-cm-Band mit 150 kHz Bandbreite und einer
+    Datenuebertragungsrate von 128 kbps (brutto).
+    <br/><br/>
+    Hansi, DL9RDZ, Michael, DK5HH, und Jann, DG8NGN, haben vor laengerer
+    Zeit mit Gnuradio an einer "open source"-Variante fuer D-Star DD
+    gearbeitet. Erfolgreich getestet wurde der Code von einem Ettus B210 zu
+    einem ICOM-ID1 (bidirektional) und RX-Only von ICOM-ID1 und Einschub am
+    Relais auf einen Ettus B210 und einem RTL-SDR-Stick. Der Code wurde
+    bisher nicht veroeffentlicht, da noch vereinzelnd Paketverluste
+    auftreten. Nachdem sich das Projekt aktuell nicht weiterbewegt werden
+    wir den aktuellen Stand veroeffentlichen.
+    <br/><br/>
+    Eine interessante Idee waere es D-Star DD im "Downlink" vom Knoten zum
+    User (RTL-Stick) und den "Uplink" ueber klassisches IP-over-AX.25 zu
+    realisieren ("schneller Downlink", "langsamer Uplink").
+<br/><br/>
 
-4. New Packet Radio by Guillaume, F4HDK
-
-Guillaume, F4HDK, hat mit dem "NPR - New Packet Radio"-Projekt
-(https://hackaday.io/project/164092-npr-new-packet-radio) eine sehr gute
-Grundlage zur Aktivierung des 70-cm-Bandes geschaffen. Fertig, guenstig
-und beschaffbar. Das DARC VHF/UHF/SHF-Referat hat sich 10 Bausaetze
-(bereits eingetroffen) und 2 Endstufen (im Zulauf) besorgt und wird
-damit erste Erfahrungen sammeln (Danke an Hans, DL8MCG). Zum Einsatz
-kommt 2- oder 4-GFSK im Simplex-Betrieb mit Hilfe des RF-Moduls "RF4463
-F30" (500mW).
-
-Mit 4GFSK kommt man bei der Uebertragungsrate schnell an seine Grenzen.
-Guillaume gibt 360kbps (Raw datarate) und 220kbps (Useful datarate) bei
-einer Bandbreite von 270 kHz an. Weitere Bandbreiten bei hoeherer
-Datenrate sind 450 kHz und 750 kHz. Auf unsere Rueckfrage hat er
-signalisiert, dass bei entsprechenden Bedarf auch eine 200 kHz Variante
-laengerfristig entstehen kann.
-
-
-5. Klassisches IP-over-AX.25
-
-Weiter ist es moeglich ueber das altbekannte Packet Radio Netz mit
-IP-over-AX.25 in das HAMNET einzusteigen. Als Bindeglied dient der
-IGATE-Knoten (AX.25-Call = IGATE SSID = 0). Verbindet man sich mit dem
-Knoten per AX.25 und gibt "getip" ein, so wird fuer das Rufzeichen eine
-IP-Adresse aus dem IP-Pool 44.130.254.128/25 fuer 40 Tage (57600
-Minuten) reserviert und ausgegeben. Traegt man diese IP-Adresse in
-seinen TCP/IP-Stack ein und benutzt IGATE als ARP, so kann eine
-(langsame) Verbindung mit dem HAMNET aufnehmen.
-
-
-6. D-Star DD (Digital Data)
-
-ICOM hat neben dem D-Star Digital Voice System auch eine Implementierung
-fuer digitale Daten (D-Star DD) in Kooperation mit der JARL entwickelt.
-Fuer D-Star DD gibt es von ICOM einen Einschub fuer ein ICOM-Relais und
-auf Nutzerseite (es funktioniert auch Peer-to-Peer) den ICOM ID-1. Beide
-Geraete arbeiten im 23-cm-Band mit 150 kHz Bandbreite und einer
-Datenuebertragungsrate von 128 kbps (brutto).
-
-Hansi, DL9RDZ, Michael, DK5HH, und Jann, DG8NGN, haben vor laengerer
-Zeit mit Gnuradio an einer "open source"-Variante fuer D-Star DD
-gearbeitet. Erfolgreich getestet wurde der Code von einem Ettus B210 zu
-einem ICOM-ID1 (bidirektional) und RX-Only von ICOM-ID1 und Einschub am
-Relais auf einen Ettus B210 und einem RTL-SDR-Stick. Der Code wurde
-bisher nicht veroeffentlicht, da noch vereinzelnd Paketverluste
-auftreten. Nachdem sich das Projekt aktuell nicht weiterbewegt werden
-wir den aktuellen Stand veroeffentlichen.
-
-Eine interessante Idee waere es D-Star DD im "Downlink" vom Knoten zum
-User (RTL-Stick) und den "Uplink" ueber klassisches IP-over-AX.25 zu
-realisieren ("schneller Downlink", "langsamer Uplink").
-
-
-7. HRD70-Projekt (http://www.hrd70.com)
-
-Vom HRD70-Projekt (Ham Radio Data for 70cm) gab es zur Hamradio 2017 ein
-Interview (https://www.youtube.com/watch?v=12E5bB_ME9I) und auf der
-Amateurfunktagung 2018 in Muenchen ein Vortrag
-(https://media.ccc.de/v/afu-tm18-1008-hrd70_high_speed_70_cm_daten_transceiver_fuer_hamnet).
-Auf der Amateurfunktagung wurde angekuendigt, dass der Source Code bei
-Fertigstellung des Projekts publiziert wird. Uns ist keine Neuigkeit zu
-dem Projekt bekannt.
+7. HRD70-Projekt (http://www.hrd70.com)  
+    Vom HRD70-Projekt (Ham Radio Data for 70cm) gab es zur Hamradio 2017 ein
+    Interview (https://www.youtube.com/watch?v=12E5bB_ME9I) und auf der
+    Amateurfunktagung 2018 in Muenchen ein Vortrag
+    (https://media.ccc.de/v/afu-tm18-1008-hrd70_high_speed_70_cm_daten_transceiver_fuer_hamnet).
+    Auf der Amateurfunktagung wurde angekuendigt, dass der Source Code bei
+    Fertigstellung des Projekts publiziert wird. Uns ist keine Neuigkeit zu
+    dem Projekt bekannt.
 
 
-73,
-Jann
-DG8NGN
-```
+73,  
+Jann  
+DG8NGN  
+
 
 ## 14. November 2019: HAMNET-Zugang auf 70-cm – Automatische Stationen
 
-```
-Subject: HAMNET-Zugang auf 70-cm – Automatische Stationen
-Date: Thu, 14 Nov 2019 10:24:41 +0100
-From: Jann Traschewski <jann@gmx.de>
-To: as-koordination@de.ampr.org
+Subject: HAMNET-Zugang auf 70-cm – Automatische Stationen  
+Date: Thu, 14 Nov 2019 10:24:41 +0100  
+From: Jann Traschewski <jann@gmx.de>  
+To: as-koordination@de.ampr.org  
 
 Liebe HAMNET-Community,
 
@@ -295,9 +286,8 @@ DL3MBG), welches die ungeplanten zusätzlichen Kosten der Evaluierung und
 Aufbereitung von NPR unkompliziert geregelt hat.
 
 Wir wünschen allen OMs und YLs viel Erfolg beim Einstieg ins HAMNET auf
-70-cm!
-für das DARC VHF/UHF/SHF-Referat,
-Jann Traschewski,
-DG8NGN
-DARC VHF/UHF/SHF-Referent
-```
+70-cm!  
+für das DARC VHF/UHF/SHF-Referat,  
+Jann Traschewski,  
+DG8NGN  
+DARC VHF/UHF/SHF-Referent  
