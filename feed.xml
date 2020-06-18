@@ -7,8 +7,22 @@
         <atom:link href="https://hnap.de/feed.xml" rel="self" type="application/rss+xml"/>
         <link>https://hnap.de/</link>
         <description>HAMNET Access Protocol</description>
-        <pubDate>Thu, 18 Jun 2020 17:26:16 +0200</pubDate>
+        <pubDate>Thu, 18 Jun 2020 23:39:37 +0200</pubDate>
         <webfeeds:icon></webfeeds:icon>
+        
+        <item>
+            
+            <title>Save the date: 28.06.2020 16:00 - HNAP-Talk at SDRA 2020</title>
+            <link>https://hnap.de/2020/06/18/save-the-date.html</link>
+            <guid isPermaLink="false">/2020/06/18/save-the-date.html</guid>
+            <description>&lt;p&gt;Lukas will give the talk “HNAP for Pluto-SDR - Implementing the HAMNET Access 
+Protocol on the Adalm Pluto SDR” at the Software Defined Radio Academy which 
+will be held “online” in 2020:
+&lt;a href=&quot;https://2020.sdra.io/pages/programme.html&quot;&gt;https://2020.sdra.io/pages/programme.html&lt;/a&gt;.&lt;br /&gt;
+There will be a live chat channel availble to receive comments and questions. Feel free to get in touch.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 18 Jun 2020 00:00:00 +0200</pubDate>
+        </item>
         
     </channel>
 </rss>
