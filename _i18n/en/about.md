@@ -16,7 +16,11 @@ available at a reasonable price tag.
 
 The open source implementation of the HAMNET Access Protocol for the ADALM
 Pluto SDR (HNAP4PlutoSDR) allows to interface the end user's PC or network
-(using an USB-to-LAN dongle) to RF. The community is invited to experiment and
+(using an USB-to-LAN dongle) to RF:
+
+![HNAP Setup](/assets/img/about/setup.jpg)
+
+The community is invited to experiment and
 to push the project to a real-world deployable solution for end user HAMNET
 access on 70-cm.
 
