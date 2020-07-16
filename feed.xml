@@ -7,8 +7,25 @@
         <atom:link href="https://hnap.de/feed.xml" rel="self" type="application/rss+xml"/>
         <link>https://hnap.de/</link>
         <description>HAMNET Access Protocol</description>
-        <pubDate>Sun, 21 Jun 2020 22:12:15 +0200</pubDate>
+        <pubDate>Thu, 16 Jul 2020 20:07:49 +0200</pubDate>
         <webfeeds:icon></webfeeds:icon>
+        
+        <item>
+            
+                <enclosure length="1" type="image" url="https://hnap.de/assets/img/posts/2020-07-16-SDRA-talk.png"/>
+            
+            <title>Recording of the HNAP talk at SDRA 2020 now online!</title>
+            <link>https://hnap.de/2020/07/16/SDRA-talk.html</link>
+            <guid isPermaLink="false">/2020/07/16/SDRA-talk.html</guid>
+            <description>&lt;p&gt;Today, the recording of Lukas’ talk about HNAP at the HAM RADIO online/SDRA2020
+was published on &lt;a href=&quot;https://www.youtube.com/watch?v=AMATF5XX71o&quot;&gt;Youtube&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=AMATF5XX71o&quot;&gt;&lt;img src=&quot;../../../assets/img/posts/2020-07-16-SDRA-talk.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy watching!&lt;/p&gt;
+</description>
+            <pubDate>Thu, 16 Jul 2020 00:00:00 +0200</pubDate>
+        </item>
         
         <item>
             
