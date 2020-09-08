@@ -7,8 +7,27 @@
         <atom:link href="https://hnap.de/feed.xml" rel="self" type="application/rss+xml"/>
         <link>https://hnap.de/</link>
         <description>HAMNET Access Protocol</description>
-        <pubDate>Thu, 16 Jul 2020 20:07:49 +0200</pubDate>
+        <pubDate>Tue, 08 Sep 2020 20:07:21 +0200</pubDate>
         <webfeeds:icon></webfeeds:icon>
+        
+        <item>
+            
+            <title>Master Thesis and further material released</title>
+            <link>https://hnap.de/2020/09/08/master-thesis-released.html</link>
+            <guid isPermaLink="false">/2020/09/08/master-thesis-released.html</guid>
+            <description>&lt;p&gt;Today, we finally released Lukas’ Master Thesis, as well as some other interesting material about HNAP.
+Have fun reading!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/pdf/Masterthesis - Design of a Radio Communications Protocol for HAMNET Access in the 70cm Amateur Radio Band.pdf&quot;&gt;Master thesis by Lukas Ostendorf: Design of a Radio Communications Protocol for
+HAMNET Access in the 70cm Amateur Radio Band&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/pdf/Presentation - HNAP4PlutoSDR.pdf&quot;&gt;Presentation: HNAP - The HAMNET Access Protocol&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/pdf/Article - HNAP4PlutoSDR - HAMNET on 70cm with the PlutoSDR.pdf&quot;&gt;Article about HNAP&lt;/a&gt; (&lt;a href=&quot;/assets/pdf/Artikel - HNAP4PlutoSDR - HAMNET auf 70cm mit dem PlutoSDR.pdf&quot;&gt;deutsch&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=AMATF5XX71o&amp;amp;t=152&quot;&gt;Talk about HNAP at the Software Defined Radio Academy 2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Tue, 08 Sep 2020 00:00:00 +0200</pubDate>
+        </item>
         
         <item>
             

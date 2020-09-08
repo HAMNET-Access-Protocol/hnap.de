@@ -1,6 +1,16 @@
 [
   
   {
+    "title"    : "Master Thesis and further material released",
+    "category" : "",
+    "tags"     : " Thesis, Videos, Article",
+    "url"      : "/2020/09/08/master-thesis-released.html",
+    "date"     : "September 8, 2020",
+    "excerpt"  : "Today, we finally released Lukas’ Master Thesis, as well as some other interesting material about HNAP.\nHave fun reading!\n\n\n  Master thesis by Lukas Ostendorf: Design of a Radio Communications Protocol for\nHAMNET Access in the 70cm Amateur Radio B...",
+  "content"  : "Today, we finally released Lukas’ Master Thesis, as well as some other interesting material about HNAP.\nHave fun reading!\n\n\n  Master thesis by Lukas Ostendorf: Design of a Radio Communications Protocol for\nHAMNET Access in the 70cm Amateur Radio Band\n  Presentation: HNAP - The HAMNET Access Protocol\n  Article about HNAP (deutsch)\n  Talk about HNAP at the Software Defined Radio Academy 2020\n\n"
+} ,
+  
+  {
     "title"    : "Recording of the HNAP talk at SDRA 2020 now online!",
     "category" : "",
     "tags"     : " SDRA2020, Videos",
