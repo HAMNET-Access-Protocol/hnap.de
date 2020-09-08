@@ -5,6 +5,14 @@ his master thesis at Rohde & Schwarz Munich in 2019/2020.
 A first implementation is available for the ADALM Pluto SDR:
 [HNAP4PlutoSDR](https://github.com/HAMNET-Access-Protocol/HNAP4PlutoSDR).
 
+Available material for further reading:
+
+* [Master thesis by Lukas Ostendorf: Design of a Radio Communications Protocol for
+HAMNET Access in the 70cm Amateur Radio Band](/assets/pdf/Masterthesis - Design of a Radio Communications Protocol for HAMNET Access in the 70cm Amateur Radio Band.pdf)
+* [Presentation: HNAP - The HAMNET Access Protocol](/assets/pdf/Presentation - HNAP4PlutoSDR.pdf)
+* [Article about HNAP](/assets/pdf/Article - HNAP4PlutoSDR - HAMNET on 70cm with the PlutoSDR.pdf) ([deutsch](/assets/pdf/Artikel - HNAP4PlutoSDR - HAMNET auf 70cm mit dem PlutoSDR.pdf))
+* [Talk about HNAP at the Software Defined Radio Academy 2020](https://www.youtube.com/watch?v=AMATF5XX71o&t=152)
+
 # Background
 
 As of today the end user RF access to the HAMNET is often limited to
@@ -32,8 +40,6 @@ modulation and coding schemes.
 
 # Agenda
 
-* Release of the masterthesis (to be expected end of July - watch the main page
-for news)
 * Implementation of a single carrier solution
 * Longer distance tests with amplifiers (PTT already available through GPIO)
 * Deployment of a real-world HAMNET-70 access point
